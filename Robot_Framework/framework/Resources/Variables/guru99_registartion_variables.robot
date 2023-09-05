@@ -1,23 +1,8 @@
 *** Variables ***
 
 
-${email}                thippeswamy95655@gmail.com
+${email}                sowji9937@gmail.com
 ${country}              INDIA
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #guru 99 registration page xpaths

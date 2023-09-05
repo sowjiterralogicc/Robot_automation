@@ -7,6 +7,7 @@ Validate Orange Hrm Login page with Valid credentials
     Pass The Vaild Credential For Login Page
     Click On Login Button
     Verify Login Page Navigate To HomePage
+    Close Browser
 
 
 
