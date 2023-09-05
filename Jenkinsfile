@@ -8,8 +8,8 @@ pipeline {
         }
         stage('Run Tests') {
             steps {
-                dir('C:\Users\Sowjanya N-3147\Documents\python programs\Robot_12') {
-                    bat '"C:\Users\Sowjanya N-3147\Documents\python programs\Robot_12\run_tests.bat"'
+                dir('C:\\Users\\Sowjanya N-3147\\Documents\\python programs\\Robot_12') {
+                    bat '"C:\\Users\\Sowjanya N-3147\\Documents\\python programs\\Robot_12\\run_tests.bat"'
                 }
             }
         }
