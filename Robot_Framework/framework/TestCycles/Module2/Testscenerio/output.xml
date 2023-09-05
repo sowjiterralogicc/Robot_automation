@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20230905 15:00:00.590" rpa="false" schemaversion="4">
+<suite id="s1" name="Testcase2" source="C:\Users\Sowjanya N-3147\Documents\python programs\Robot_12\Robot_Framework\framework\TestCycles\Module2\Testscenerio\testcase2.robot">
+<test id="s1-t1" name="Verify the registration page filling with valid data into relevant fields" line="6">
+<kw name="Launch the Para Registration Form Website" library="para_registrationPO">
+<kw name="Lanuch Browser" library="common_keywords">
+<arg>${para_registration_portal}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230905 15:00:00.860" level="INFO">Opening browser 'chrome' to base url 'https://parabank.parasoft.com/parabank/register.htm'.</msg>
+<status status="PASS" starttime="20230905 15:00:00.860" endtime="20230905 15:00:06.564"/>
+</kw>
+<status status="PASS" starttime="20230905 15:00:00.859" endtime="20230905 15:00:06.564"/>
+</kw>
+<status status="PASS" starttime="20230905 15:00:00.859" endtime="20230905 15:00:06.564"/>
+</kw>
+<kw name="Fill with Valid Data Into Appropriate Fields" library="para_registrationPO">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${firstname_xpath}</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 15:00:06.566" level="INFO">Typing text 'sowjanya' into text field 'xpath://form[@id='customerForm']/table//descendant::input[@name='customer.firstName']'.</msg>
+<status status="PASS" starttime="20230905 15:00:06.565" endtime="20230905 15:00:06.824"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${lastname_xpath}</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 15:00:06.825" level="INFO">Typing text 'N' into text field 'xpath://form[@id='customerForm']/table//descendant::input[@name='customer.lastName']'.</msg>
+<status status="PASS" starttime="20230905 15:00:06.824" endtime="20230905 15:00:07.033"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${address_xpath}</arg>
+<arg>${address}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 15:00:07.035" level="INFO">Typing text '8/31' into text field 'xpath://form[@id='customerForm']/table//descendant::input[@name='customer.address.street']'.</msg>
+<status status="PASS" starttime="20230905 15:00:07.033" endtime="20230905 15:00:07.198"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${city_xpath}</arg>
+<arg>${city}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 15:00:07.198" level="INFO">Typing text 'Bengaluru' into text field 'xpath://form[@id='customerForm']/table//descendant::input[@name='customer.address.city']'.</msg>
+<status status="PASS" starttime="20230905 15:00:07.198" endtime="20230905 15:00:07.308"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${state_xpath}</arg>
+<arg>${state}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 15:00:07.309" level="INFO">Typing text 'Karnataka' into text field 'xpath://form[@id='customerForm']/table//descendant::input[@name='customer.address.state']'.</msg>
+<status status="PASS" starttime="20230905 15:00:07.308" endtime="20230905 15:00:07.934"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${postalcode_xpath}</arg>
+<arg>${postalcode}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 15:00:07.935" level="INFO">Typing text '515870' into text field 'xpath://form[@id='customerForm']/table//descendant::input[@name='customer.address.zipCode']'.</msg>
+<status status="PASS" starttime="20230905 15:00:07.935" endtime="20230905 15:00:08.037"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${phone_xpath}</arg>
+<arg>${phone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 15:00:08.037" level="INFO">Typing text '6309479867' into text field 'xpath://form[@id='customerForm']/table//descendant::input[@name='customer.phoneNumber']'.</msg>
+<status status="PASS" starttime="20230905 15:00:08.037" endtime="20230905 15:00:08.203"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${ssn_xpath}</arg>
+<arg>${ssn}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 15:00:08.204" level="INFO">Typing text '12345' into text field 'xpath://form[@id='customerForm']//descendant::input[@name='customer.ssn']'.</msg>
+<status status="PASS" starttime="20230905 15:00:08.203" endtime="20230905 15:00:08.400"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${username_xpath}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 15:00:08.401" level="INFO">Typing text 'sowjanya1' into text field 'xpath://form[@id='customerForm']/table//descendant::input[@name='customer.username']'.</msg>
+<status status="PASS" starttime="20230905 15:00:08.400" endtime="20230905 15:00:08.572"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${password_xpath}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 15:00:08.572" level="INFO">Typing text '12345678' into text field 'xpath://form[@id='customerForm']/table//descendant::input[@name='customer.password']'.</msg>
+<status status="PASS" starttime="20230905 15:00:08.572" endtime="20230905 15:00:08.671"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${confirm_password_xpath}</arg>
+<arg>${confirm_password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 15:00:08.673" level="INFO">Typing text '12345678' into text field 'xpath://form[@id='customerForm']/table//descendant::input[@name='repeatedPassword']'.</msg>
+<status status="PASS" starttime="20230905 15:00:08.673" endtime="20230905 15:00:08.855"/>
+</kw>
+<status status="PASS" starttime="20230905 15:00:06.564" endtime="20230905 15:00:08.855"/>
+</kw>
+<kw name="Click on Register Button" library="para_registrationPO">
+<kw name="Click On Button" library="common_keywords">
+<arg>${register_button_xpath}</arg>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Button_xpath}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230905 15:00:08.856" level="INFO">Clicking button 'xpath://form[@id='customerForm']/table//descendant::input[@class='button']'.</msg>
+<status status="PASS" starttime="20230905 15:00:08.856" endtime="20230905 15:00:11.242"/>
+</kw>
+<status status="PASS" starttime="20230905 15:00:08.855" endtime="20230905 15:00:11.242"/>
+</kw>
+<status status="PASS" starttime="20230905 15:00:08.855" endtime="20230905 15:00:11.242"/>
+</kw>
+<kw name="Close Browser windows" library="para_registrationPO">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230905 15:00:11.244" endtime="20230905 15:00:17.829"/>
+</kw>
+<status status="PASS" starttime="20230905 15:00:11.243" endtime="20230905 15:00:17.829"/>
+</kw>
+<status status="PASS" starttime="20230905 15:00:00.858" endtime="20230905 15:00:17.829"/>
+</test>
+<status status="PASS" starttime="20230905 15:00:00.594" endtime="20230905 15:00:17.830"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testcase2">Testcase2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
