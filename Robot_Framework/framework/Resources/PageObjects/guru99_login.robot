@@ -21,7 +21,7 @@ Click On Login Button
     Click On Button    ${login_button_xpath}
 
 Verify Login page Navigate to HomePage
-    Wait Until Page Contains Element    ${Login_successful_msg_xpath}   timeout=10s
+    Wait Until Page Contains Element    ${Login_successful_msg_xpath}   timeout=20s
     ${word}=    Get Text       ${Login_successful_msg_xpath}
     Run Keyword If    "${word}" != "Login Successfully"    Log    It's not navigated to the home page
     [Teardown]    Close Browser

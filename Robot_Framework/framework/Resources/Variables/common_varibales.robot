@@ -12,6 +12,6 @@ ${city}                 Bengaluru
 ${state}                Karnataka
 ${postalcode}           515870
 ${phone}                6309479867
-${username}             sowjanya1
+${username}             sowjanya
 ${password}             12345678
 ${confirm_password}     12345678
